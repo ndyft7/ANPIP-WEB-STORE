@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANPIP JASA STORE</title>
+    <link rel="icon" type="image/png" href="pp-icon.png" class="tab-browser">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!-- STYLE CSS -->
+     <style>
+        *,
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ecf0f1;
+  min-height: 100vh;
+}
+
+/*  NAVBAR  */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  padding: 2rem 4rem;
+  align-items: center;
+  background-color: #2ecc71;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+nav h1 {
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+nav h1:hover {
+    color: yellow;
+    transform: translateY(-5px);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+}
+
+nav ul.hidden {
+  display: none;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bolder;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  transform: scale(1.1);
+  color: yellow;
+}
+
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 0;
+  background-color: rgb(229, 255, 0);
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover:after {
+  width: 100%;
+}
+
+.list-item {
+  display: none;
+  font-size: 35px;
+  color: white;
+}
+
+.list-item:hover {
+  color: yellow;
+  transform: scale(1.1);
+  color: yellow;
+}
+
+/* Main content */
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 350px;
+  align-items: center;
+}
+
+/*  KOLOM 1  */
+
+.kolom1 {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffffff;
+  padding: 2rem;
+}
+
+.kolom1 h1 {
+  color: greenyellow;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.kolom1 h1:hover {
+  transform: translateY(-5px);
+  color: #27ae60;
+}
+
+.kolom1 p {
+  color: black;
+  font-size: 20px;
+}
+
+/*  KOLOM 2  */
+
+.kolom2 {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+}
+
+.main-icon {
+  transition: transform 0.2s;
+  display: inline-block;
+  border-radius: 10px;
+  height: 50%;
+  width: 50%;
+  size: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.main-icon:hover {
+  transform: translateY(-5px);
+}
+
+.main-icon:hover {
+  transition: all ease-in-out 0.5s;
+}
+
+/* ISI CONTENT */
+/* KOTAK  */
+.kotak {
+  /* background-color: w; */
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding-top: 3rem;
+  gap: 2rem;
+  justify-content: center;
+  height: 50%;
+  margin-bottom: 7rem;
+  margin-top: 6rem;
+}
+
+.container {
+  border: solid #27ae60 5px;
+  background-color: #2ecc71;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+  height: 320px;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+.pembungkus-text h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 25px;
+  margin-bottom: 0.5rem;
+}
+
+.pembungkus-text h1:hover {
+  color: yellow;
+  transition: all ease 0.5s;
+  color: white;
+}
+
+.pembungkus-text p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.pembungkus-text button {
+  padding: 0.5rem;
+  justify-content: end;
+  width: 50%;
+  background-color: white;
+  border-radius: 5px;
+  align-items: left;
+  transition: transform 0.2s;
+  display: inline-block;
+}
+
+.pembungkus-text button:hover {
+  transition: all ease 0.5s;
+  background-color: yellow;
+  transform: translateY(-5px);
+}
+
+.pembungkus-gambar img {
+  width: 100%;
+  height: 150px;
+}
+
+.pembungkus-gambar {
+  width: 100%;
+}
+
+.pembungkus-text {
+  align-items: center;
+  padding: 10px;
+}
+
+.pembungkus-text h1 {
+  text-transform: uppercase;
+}
+
+/* MEDIA QUERYY */
+
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .menu-list2 {
+    display: none;
+  }
+
+  nav ul {
+    background-color: #27ae60;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .list-item {
+    display: block;
+  }
+
+  .kolom1 {
+    width: 100%;
+  }
+
+  .kolom2 {
+    display: none;
+  }
+
+  .kotak {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 200px) {
+    .kotak {
+        gap: 5rem;
+    }
+
+  .container {
+    width: 180px;
+    height: 200px;
+    justify-content: center;
+  }
+
+
+  .pembungkus-gambar img {
+    width: 100%;
+    height: 75px;
+  }
+
+  .pembungkus-gambar {
+    width: 100%;
+  }
+
+  .pembungkus-text {
+    padding: 5px;
+  }
+
+  .pembungkus-text p {
+    display: none;
+  }
+
+  .pembungkus-text h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+
+  .pembungkus-text button {
+  padding: 0.25rem;
+  width: 100%;
+  border-radius: 2.5px;
+  margin-top: 15px;
+}
+}
+
+/* ====== CSS FOOTER ====== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: sans-serif;
+      background: #f0f0f0;
+    }
+    .footer {
+      background-color: #118d45;
+      color: #fff;
+      padding: 60px 20px 30px;
+    }
+    .footer-container {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 40px;
+    }
+    .footer h2,
+    .footer h3 {
+      margin-bottom: 15px;
+    }
+    .footer p,
+    .footer ul,
+    .footer a {
+      font-size: 14px;
+      color: #ccc;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      color: #fff;
+    }
+    .footer ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .footer-bottom {
+      text-align: center;
+      border-top: 1px solid #444;
+      padding-top: 20px;
+      margin-top: 30px;
+      font-size: 13px;
+      color: #888;
+    }
+    .social-icons a {
+      margin-right: 10px;
+      display: inline-block;
+    }
+
+    /* Responsive tweak */
+    @media (max-width: 600px) {
+      .footer-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+     </style>
+    <!-- END STYLE CSS -->
+
+<body>
+    <nav>
+        <h1>ANPIP STORE</h1>
+        <div id="menu-icon" class="list-item"><i class="ph ph-list"></i></div>
+        <ul id="menu-list" class="hidden">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#" style="color: yellow;">JASA</a></li>
+            <li><a href="community.html">COMMUNITY</a></li>
+            <li><a href="#" id="help1">HELP</a></li>
+        </ul>
+        <ul class="menu-list2">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#" style="color: yellow;">JASA</a></li>
+            <li><a href="community.html">COMMUNITY</a></li>
+            <li><a href="#" id="help2">HELP</a></li>
+        </ul>
+    </nav>
+    <!-- MAIN CONTENT -->
+    <div class="main">
+        <div class="kolom1">
+            <h1>Open Jasa </h1>
+            <p>Slahkan order jasa disini.. Dijamin Murah Meriah!</p>
+        </div>
+        <div class="kolom2">
+            <img class="main-icon" src="pp-icon.png">
+        </div>
+    </div>
+
+    <!-- END MAIN CONENT -->
+
+     <!-- ISI CONTENT  -->
+    <div class="kotak">
+        <div class="container">
+            <div class="pembungkus-gambar">
+                <img src="https://cdn.dribbble.com/userupload/41930657/file/still-92550ea561f7221c92447018141ae660.gif?resize=400x0">
+            </div>
+            <div class="pembungkus-text">
+                <h1>Web Profile</h1>
+                <p>Kapan lagi web profile 5k!</p>
+                <button><a href="https://whatsapp.com/channel/0029VbAql3pFsn0lDZmmov2B" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: black; text-decoration: none;">PESAN</a></button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="pembungkus-gambar">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Sa4UCehwh-3VXWgJ7aQj890aIcvg2oq-kA&s">
+            </div>
+            <div class="pembungkus-text">
+                <h1>Editing Vidio</h1>
+                <p>Jasa Edit Murah Dan Cepat!</p>
+                <button><a href="https://whatsapp.com/channel/0029VbAql3pFsn0lDZmmov2B" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: black; text-decoration: none;">PESAN</a></button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="pembungkus-gambar">
+                <img src="https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p1/1050/2024/01/15/video-presentasi-di-canva-2493941945.jpg">
+            </div>
+            <div class="pembungkus-text">
+                <h1>ppt canva</h1>
+                <p>Deadline Tugas ppt? Sini kami selesaikan!</p>
+                <button><a href="https://whatsapp.com/channel/0029VbAql3pFsn0lDZmmov2B" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: black; text-decoration: none;">PESAN</a></button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="pembungkus-gambar">
+                <img src="pp-icon.png">
+            </div>
+            <div class="pembungkus-text">
+                <h1>Edit Logo</h1>
+                <p>Custom Logo? Sini Dibuatin Sama Anak DKV</p>
+                <button><a href="https://whatsapp.com/channel/0029VbAql3pFsn0lDZmmov2B" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: black; text-decoration: none;">PESAN</a></button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="pembungkus-gambar">
+                <img src="https://i.pinimg.com/736x/4d/d9/a8/4dd9a839dd6c0e490ae8446c7d2e7f4c.jpg">
+            </div>
+            <div class="pembungkus-text">
+                <h1>Edit JJ</h1>
+                <p>Males Ngedit JJ? Sini Kami Buatin FULL HD!</p>
+                <button><a href="https://whatsapp.com/channel/0029VbAql3pFsn0lDZmmov2B" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: black; text-decoration: none;">PESAN</a></button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="pembungkus-gambar">
+                <img src="https://promoalltest-blog.cdnpromo.com/wp-content/uploads/2021/11/OG-YouTube-Thumbnail-size-and-best-practices-scaled.jpg">
+            </div>
+            <div class="pembungkus-text">
+                <h1>thumbnail yt</h1>
+                <p>Gak Pandai Buat Thumbnile? Sini kami buatin</p>
+                <button><a href="https://whatsapp.com/channel/0029VbAql3pFsn0lDZmmov2B" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: black; text-decoration: none;">PESAN</a></button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="pembungkus-gambar">
+                <img src="https://cdn.rri.co.id/berita/66/images/1706779127829-3/0jigyh52nnjqlt7.jpeg">
+            </div>
+            <div class="pembungkus-text">
+                <h1>saran Creator</h1>
+                <p>Memberi Saran, Ide Atau Trik Untuk konten Kreator</p>
+                <button><a href="https://whatsapp.com/channel/0029VbAql3pFsn0lDZmmov2B" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: black; text-decoration: none;">PESAN</a></button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="pembungkus-gambar">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr2LCv13Nx8bhySupILVVaBV7ZWl6dBADoQw&s">
+            </div>
+            <div class="pembungkus-text">
+                <h1>Promosi YT</h1>
+                <p>Konten Sepi? Sini Biar admin promosikan YT Kalian</p>
+                <button><a href="https://whatsapp.com/channel/0029VbAql3pFsn0lDZmmov2B" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: black; text-decoration: none;">PESAN</a></button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="pembungkus-gambar">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBLBht4gi-rmLGGzHIq8a7W51G1XISDsVZDg&s">
+            </div>
+            <div class="pembungkus-text">
+                <h1>Spam Otp Wa</h1>
+                <p>Kesal dengan seseorang? Spam Aja WA Nya!</p>
+                <button><a href="https://whatsapp.com/channel/0029VbAql3pFsn0lDZmmov2B" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: black; text-decoration: none;">PESAN</a></button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="pembungkus-gambar">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJMx4th9f4yTLE8QXlIKD0UCujvmRPLuz46w&s">
+            </div>
+            <div class="pembungkus-text">
+                <h1>Intro YT 5k!</h1>
+                <p>Kapan lagi intro 2D/3D 5k, Pesen Sekarang Woee!</p>
+                <button><a href="https://whatsapp.com/channel/0029VbAql3pFsn0lDZmmov2B" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: black; text-decoration: none;">PESAN</a></button>
+            </div>
+        </div>
+</div>
+
+    <!-- END ISI CONTENT -->
+
+
+    <!-- ====== FOOTER START ====== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h2>AnpipStore</h2>
+        <p>Membawa solusi digital untuk masa depan yang lebih baik.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Layanan</h3>
+        <ul>
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">Design Logo</a></li>
+          <li><a href="#">Editing</a></li>
+          <li><a href="#">Dll.</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h3>Grub/Komunitas</h3>
+        <ul>
+          <li><a href="https://chat.whatsapp.com/DG8uX99FzSG2NXZluw5r8j">Grub WhatsApp</a></li>
+          <li><a href="https://whatsapp.com/channel/0029VbAql3pFsn0lDZmmov2B">Saluran WhatsApp</a></li>
+          <li><a href="https://discord.gg/dyKNX3ySn2">Discord</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h3>Help?</h3>
+        <div class="social-icons" style="display: flex; flex-direction: column;">
+          <a href="https://wa.me/6287761081654" style="margin-bottom: 0.5 rem;">Hubungi Admin Ndyvah  (Andy)</a>
+          <a href="https://wa.me/6285167890186">Hubungi Admin Rpipzz  (Rapip)</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom" style="color: white;">
+      &copy; 2025 ANPIP STORE. All rights reserved.
+    </div>
+  </footer>
+  <!-- ====== FOOTER END ====== -->
+
+
+</body>
+<script src="main.js"></script>
+</html>
